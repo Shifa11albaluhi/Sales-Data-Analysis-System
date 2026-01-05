@@ -6,7 +6,7 @@ public class SalesAnalysis {
         int[] sales = {500, 150, 300};
         int salesThreshold = 300;
 
-        for (int i = 0; i < products.length; i++) {
+        for (int i = 1; i < products.length; i++) {
 
             if (sales[i] >= salesThreshold) {
                 System.out.println("High-Selling Product: " 
