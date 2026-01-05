@@ -1,0 +1,22 @@
+public class SalesAnalysis {
+
+    public static void main(String[] args) {
+
+        String[] products = {"Laptop", "Phone", "Tablet"};
+        int[] sales = {500, 150, 300};
+        int salesThreshold = 300;
+
+        for (int i = 0; i < products.length; i++) {
+
+            if (sales[i] >= salesThreshold) {
+                System.out.println("High-Selling Product: " 
+                        + products[i] + ", Units Sold: " + sales[i]);
+            } else {
+                System.out.println("Low-Selling Product: " 
+                        + products[i] + ", Units Sold: " + sales[i]);
+            }
+        }
+
+        System.out.println("Total Products Analyzed: " + products.length);
+    }
+}
